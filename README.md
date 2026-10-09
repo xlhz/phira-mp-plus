@@ -2,6 +2,8 @@
 
 `phira-mp-plus` is a modified derivative of [TeamFlos/phira-mp](https://github.com/TeamFlos/phira-mp) (Apache-2.0), adding server administration features. See [NOTICE](NOTICE) for attribution and the list of modifications.
 
+This project is not affiliated with or endorsed by TeamFlos.
+
 `phira-mp` is a project developed with Rust. Below are the steps to deploy and run this project.
 
 [简体中文](README.zh-CN.md) | English Version

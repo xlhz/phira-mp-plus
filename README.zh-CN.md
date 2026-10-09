@@ -2,6 +2,8 @@
 
 `phira-mp-plus` 是基于 [TeamFlos/phira-mp](https://github.com/TeamFlos/phira-mp)(Apache-2.0)修改的衍生版本,新增了服务端管理功能。归属说明与改动清单见 [NOTICE](NOTICE)。
 
+本项目与 TeamFlos 无隶属关系,亦未获得其背书。
+
 `phira-mp` 是一个用 Rust 开发的项目。 以下是部署和运行该项目服务端的步骤。
 
 简体中文 | [English Version](README.md)
