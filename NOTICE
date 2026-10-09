@@ -1,0 +1,49 @@
+phira-mp-plus
+Copyright (c) 2026 xlhz
+
+This product is a modified derivative work of phira-mp.
+
+Original project:
+    TeamFlos/phira-mp
+    https://github.com/TeamFlos/phira-mp
+    Copyright the phira-mp contributors
+    Licensed under the Apache License, Version 2.0.
+
+NOTICE OF MODIFICATION (Apache License 2.0, Section 4(b))
+---------------------------------------------------------
+
+This repository is NOT the upstream project. The source files listed below are
+added or modified relative to TeamFlos/phira-mp and are distributed as modified
+versions:
+
+    phira-mp-common/src/lib.rs          modified
+    phira-mp-common/src/bin.rs          modified
+    phira-mp-client/src/lib.rs          modified
+    phira-mp-server/src/main.rs         modified
+    phira-mp-server/src/server.rs       modified
+    phira-mp-server/src/session.rs      modified
+    phira-mp-server/src/room.rs         modified
+    phira-mp-server/src/l10n.rs         modified
+    phira-mp-server/src/console.rs      added
+    phira-mp-server/src/ip_access.rs    added
+    phira-mp-server/src/traffic.rs      added
+    phira-mp-server/src/maintenance.rs  added
+
+Non-source files (README.md, README.zh-CN.md, Cargo.toml, .gitignore,
+.github/workflows/*, ip_access.example.yml, build.bat, run.bat) were also
+modified or added.
+
+Modifications include, but are not limited to:
+
+    - Added a terminal UI console (ratatui) for server administration.
+    - Added an IP allow/deny list with glob and CIDR matching.
+    - Added per-IP traffic limiting with configurable exceed actions.
+    - Added a temporary maintenance/close mode.
+    - Added IPv4 / IPv6 / both listen address selection.
+    - Added per-stream sent/received byte counters.
+    - Reworked logging to write to both a rolling file and an in-TUI buffer.
+    - Hardened the connection handshake (no global lock held during it, plus a
+      handshake timeout) and the uleb128 decoder.
+
+The upstream Apache-2.0 LICENSE is retained in the LICENSE file. No copyright
+notices were removed from the files listed above. See README.md for details.

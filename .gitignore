@@ -1,0 +1,14 @@
+# Rust
+/target
+
+# Log
+/log
+
+# Config
+/server_config.yml
+/ip_access.yml
+/traffic.yml
+
+# Misc
+.DS_Store
+/.trae
